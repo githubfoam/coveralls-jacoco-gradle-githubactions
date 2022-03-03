@@ -14,7 +14,8 @@ jobs:
 
 
 
-  gradle-make-jacoco-coveralls:
+  make-gradle-jacoco-coveralls:
+    name: "make build gradle w jacoco coveralls"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -28,6 +29,7 @@ jobs:
       run: sudo make deploy-app5
       
   gradle-jacoco-coveralls:
+    name: "build gradle w jacoco coveralls"
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
