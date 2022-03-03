@@ -1,14 +1,16 @@
 name: "coveralls jacoco  gradle CI"
 
-# on:
-#   push:
-#     branches: [ githubactions ]
-#   pull_request:
-#     branches: [ githubactions ]
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+      - cron:  '0 0 1 * *' ##execution of a task in the first minute of the month  
+
 
 jobs:
-  # build:
+
 
 
 
